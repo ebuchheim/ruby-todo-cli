@@ -1,6 +1,7 @@
 #!/usr/local/bin/ruby -w
 #This is where I'm keeping my ACTIONS!
 require_relative "../lib/classes.rb"
+require_relative "../lib/modules.rb"
 
 if __FILE__ == $PROGRAM_NAME
   my_list = List.new
