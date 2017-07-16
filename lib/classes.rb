@@ -14,7 +14,7 @@ class List
 
   def show
     puts "\nHere are your tasks:"
-    @all_tasks.each {|task| puts task.item}
+    @all_tasks.each_with_index {|task, index| puts "#{index + 1}.) #{task.item}"}
     puts "\nThat's it.  Let's get crackin'!"
   end
 
