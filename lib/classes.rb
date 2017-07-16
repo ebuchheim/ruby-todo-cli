@@ -13,8 +13,9 @@ class List
   end
 
   def show
-    puts "\nHi, I'm your task master!  Here are your tasks:"
+    puts "\nHere are your tasks:"
     @all_tasks.each {|task| puts task.item}
+    puts "\nThat's it.  Let's get crackin'!"
   end
 end
 

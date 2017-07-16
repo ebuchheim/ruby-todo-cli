@@ -9,13 +9,21 @@ if __FILE__ == $PROGRAM_NAME
 
   my_list = List.new
   Menu.show
-  until Promptable.prompt == "q"
+  input = Promptable.prompt
+  until input == "q"
+    case input
+      when "1"
+        task_input = Promptable.prompt("What would you like to add?")
+        Task.new(task_input)
+        my_list.add(Task.new(task_input))
+        input = Promptable.prompt
+      when "2"
+        my_list.show
+        input = Promptable.prompt
+      else
+        input = Promptable.prompt
+    end
   end
-
-  #my_first_task = Task.new("Snuggles with Tyler!")
-  #my_list.add(my_first_task)
-  #my_second_task = Task.new ("Snuggles with puppies!")
-  #my_list.add(my_second_task)
-  #my_list.show
+  puts "Aw, I guess you'll go be productive now.  Bye!"
 
 end

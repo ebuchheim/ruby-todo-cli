@@ -20,4 +20,5 @@ module Promptable
     print symbol
     gets.chomp
   end
+
 end
