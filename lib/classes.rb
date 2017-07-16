@@ -17,6 +17,10 @@ class List
     @all_tasks.each {|task| puts task.item}
     puts "\nThat's it.  Let's get crackin'!"
   end
+
+  def write_to_file(filename)
+    IO.write(filename, @all_tasks.map(&:to_s).join("\n"))
+  end
 end
 
 class Task

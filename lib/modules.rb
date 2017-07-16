@@ -4,7 +4,8 @@ module Menu
     puts "Welcome to your To Do List!
     \nThis shortcut menu will help you use the system:
     \n1 = Add
-    \n2 = show
+    \n2 = Show
+    \n3 = Write to a text file
     \nq = Quit"
   end
 
@@ -21,4 +22,7 @@ module Promptable
     gets.chomp
   end
 
+  def to_s
+    @item
+  end
 end
