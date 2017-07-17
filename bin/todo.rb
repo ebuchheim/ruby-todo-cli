@@ -25,10 +25,21 @@ if __FILE__ == $PROGRAM_NAME
         my_list.show
         input = prompt
       when "3"
+        my_list.show
+        task_number = prompt("What task would you like to delete?  Enter the task number.")
+        my_list.delete(task_number)
+        my_list.show
+        input = prompt("\nWould you like to delete another task? (Y/n)")
+        if input.upcase == "Y" || input.upcase == "YES"
+          input = "3"
+        else
+          input = prompt
+        end
+      when "4"
         filename_input = prompt("\nPlease enter the name of the file you would like to write to:")
         my_list.write_to_file(filename_input)
         input = prompt
-      when "4"
+      when "5"
         filename_input = prompt("\nPlease enter the name of the file you would like to read from:")
         my_list.read_to_file(filename_input)
         input = prompt

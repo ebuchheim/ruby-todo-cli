@@ -5,8 +5,9 @@ module Menu
     \nThis shortcut menu will help you use the system:
     \n1 = Add an item to the list
     \n2 = Show the full list
-    \n3 = Write to a text file
-    \n4 = Read from a text file
+    \n3 = Delete am item from the list
+    \n4 = Write to a text file
+    \n5 = Read from a text file
     \nq = Quit"
   end
 

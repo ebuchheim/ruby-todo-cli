@@ -27,6 +27,10 @@ class List
       add(Task.new(line.chomp))
     end
   end
+
+  def delete(task_number)
+    @all_tasks.delete_at(task_number.to_i - 1)
+  end
 end
 
 class Task
