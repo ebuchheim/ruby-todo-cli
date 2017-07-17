@@ -3,9 +3,10 @@ module Menu
   def menu
     puts "Welcome to your To Do List!
     \nThis shortcut menu will help you use the system:
-    \n1 = Add
-    \n2 = Show
+    \n1 = Add an item to the list
+    \n2 = Show the full list
     \n3 = Write to a text file
+    \n4 = Read from a text file
     \nq = Quit"
   end
 

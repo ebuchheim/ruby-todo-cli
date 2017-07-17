@@ -28,6 +28,10 @@ if __FILE__ == $PROGRAM_NAME
         filename_input = Promptable.prompt("\nPlease enter the name of the file you would like to write to:")
         my_list.write_to_file(filename_input)
         input = Promptable.prompt
+      when "4"
+        filename_input = Promptable.prompt("\nPlease enter the name of the file you would like to read from:")
+        my_list.read_to_file(filename_input)
+        input = Promptable.prompt
       else
         input = Promptable.prompt
     end
