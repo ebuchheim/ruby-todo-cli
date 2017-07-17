@@ -14,9 +14,13 @@ if __FILE__ == $PROGRAM_NAME
     case input
       when "1"
         task_input = Promptable.prompt("What would you like to add?")
-        Task.new(task_input)
         my_list.add(Task.new(task_input))
-        input = Promptable.prompt
+        input = Promptable.prompt("\nWould you like to add another task? (Y/n)")
+        if input.upcase == "Y" || input.upcase == "YES"
+          input = "1"
+        else
+          input = Promptable.prompt
+        end
       when "2"
         my_list.show
         input = Promptable.prompt
