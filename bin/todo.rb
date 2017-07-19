@@ -54,6 +54,16 @@ if __FILE__ == $PROGRAM_NAME
         filename_input = prompt("\nPlease enter the name of the file you would like to read from:")
         my_list.read_to_file(filename_input)
         input = prompt
+      when "7"
+        puts my_list.show
+        my_list.toggle(prompt("Which task number would you like to set to completed status?").to_i)
+        my_list.show
+        input = prompt("\nWould you like to change the status of another task? (Y/n)")
+        if input.upcase == "Y" || input.upcase == "YES"
+          input = "7"
+        else
+          input = prompt
+        end
       when "h"
         show
         input = prompt

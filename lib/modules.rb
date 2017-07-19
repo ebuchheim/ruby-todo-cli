@@ -9,6 +9,7 @@ module Menu
     \n4 = Delete am item from the list
     \n5 = Write to a text file
     \n6 = Read from a text file
+    \n7 = Set completion status
     \nh = Help!  Show me the commands!
     \nq = Quit"
   end
